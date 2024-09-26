@@ -1,0 +1,93 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+
+  //Removes error outline around input in Firefox
+  *:focus {
+    outline: none;
+  }
+
+  //Removes stupid "x" in input in IE Edge
+  input[type=text]::-ms-clear {
+    display: none;
+  }
+
+  .input-container {
+    margin: 1.6rem 0;
+  }
+
+  .radio-container {
+    grid-template-columns: repeat(2, 1.4rem max-content);
+    display: grid;
+    grid-gap: 1.5rem;
+
+    @media only screen and (max-width: $bp-tab-land) {
+      grid-template-columns: 1.4rem max-content;
+    }
+
+    @media only screen and (max-width: $bp-tab-port) {
+      grid-template-columns: repeat(2, 1.4rem max-content);
+    }
+
+    @media only screen and (max-width: $bp-phone-port) {
+      grid-template-columns: 1.4rem max-content;
+    }
+
+    font-size: calc(1rem + .5vw);
+    margin-bottom: 2rem;
+    align-items: center;
+  }
+
+  &__input {
+    height: 3.7rem;
+    width: 46%;
+    min-width: 12rem;
+    padding-left: 1rem;
+    margin-right: 1rem;
+
+    @media only screen and (max-width: $bp-tab-port) {
+      width: 100%;
+      margin-top: 1rem;
+    }
+    &--validate:focus:valid,
+    &--validate:not(:focus):valid {
+      background-image: url(../img/SVG/checkmark.svg);
+      background-size: 2.5rem;
+      background-position-x: 98%;
+      background-position-y: .35rem;
+      background-repeat: no-repeat;
+    }
+    &--validate:focus:invalid,
+    &--validate:not(:focus):invalid:not(:placeholder-shown) {
+      background-image: url(../img/SVG/cross.svg);
+      background-color: #ffdddd;
+      background-size: 2rem;
+      background-position-y: .7rem;
+      background-position-x: 97.5%;
+      background-repeat: no-repeat;
+      z-index: 99999;
+    }
+  }
+  .do-it{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .mail-status {
+    height: 3rem;
+  }
+
+  .spinning-gif {
+    background-image: url("../img/6.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .success{
+    //linear forwards keeps animation faded out
+    animation: fadeOut 1s linear forwards;
+  }
+}

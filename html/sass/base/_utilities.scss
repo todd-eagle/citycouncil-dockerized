@@ -1,0 +1,22 @@
+.u-highlight {
+  &--blue {
+    color: $color-secondary-dark-blue;
+  }
+}
+.u-bold {
+  &--heavy {
+    font-weight: 700;
+  }
+}
+
+.u-underline {
+  text-decoration: underline;
+}
+
+.u-no_dec{
+  text-decoration: none;
+}
+
+.u-block {
+  display: block;
+}

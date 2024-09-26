@@ -1,0 +1,59 @@
+
+// Grid Layouts
+
+@mixin default-grid {
+  grid-template-columns: [fullcontent-start]minmax(3rem, 1fr)
+  [centercontent-start]repeat(8, [column-start] minmax(min-content, 15rem) [column-end])
+  [centercontent-end]
+  minmax(3rem, 1fr)[fullcontent-end];
+  display: grid;
+}
+
+@mixin header-grid {
+  grid-template-columns: [fullcontent-start]minmax(3rem, .5fr)
+  [centercontent-start]repeat(8, [column-start] minmax(min-content, 15rem) [column-end])
+  [centercontent-end]
+  minmax(3rem, 1fr)[fullcontent-end];
+  display: grid;
+}
+
+@mixin sixteen-col-grid {
+  grid-template-columns: [fullcontent-start].7fr
+  [centercontent-start] repeat(16, [column-start] minmax(max-content,1fr) [column-end])
+  [centercontent-end] .7fr [fullcontent-end];
+  display: grid;
+}
+
+
+@mixin sixteen-col-grid-1fr {
+  grid-template-columns: [fullcontent-start]minmax(3rem, 1fr)
+  [centercontent-start]repeat(16, [column-start] minmax(min-content, 7.5rem) [column-end])
+  [centercontent-end]
+  minmax(3rem, 1fr)[fullcontent-end];
+  display: grid;
+}
+
+@mixin navigation-grid {
+  grid-template-columns: repeat(4, 14rem);
+  display: grid;
+}
+
+@mixin mobile-nav-grid {
+  grid-column: 15 / -1;
+  grid-template-columns: 100vw;
+  display: grid;
+}
+
+@mixin logo-area-grid {
+  grid-template-columns: max-content;
+}
+
+@mixin logo-mobile-grid {
+  grid-template-columns: 1fr;
+  display: grid;
+}
+
+@mixin card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+  display: grid;
+}

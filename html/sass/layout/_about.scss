@@ -1,0 +1,30 @@
+.about {
+  @include default-grid;
+
+  .quick-bio {
+    grid-column: fullcontent-start / column-end 4;
+    padding: 4rem 4rem 6rem 5vw;
+    background-color: $color-primary-ocean-blue;
+    color: $color-white;
+
+    @media only screen and (max-width: $bp-tab-land) {
+      grid-column: fullcontent;
+    }
+  }
+
+
+  .bio-pic {
+    grid-column: column-start 5 / fullcontent-end;
+    padding: 4rem 4rem 6rem 5vw;
+    //background-color: $color-off-white;
+    background-image: url("../img/9.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media only screen and (max-width: $bp-tab-land) {
+      grid-column: fullcontent;
+      display: none;
+    }
+
+  }
+}

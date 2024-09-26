@@ -1,0 +1,37 @@
+%default-grid {
+  grid-template-columns: [fullcontent-start]minmax(3rem, 1fr)
+  [centercontent-start]repeat(8, [column-start] minmax(min-content, 15rem) [column-end])
+  [centercontent-end]
+  minmax(3rem, 1fr)[fullcontent-end];
+  display: grid;
+}
+
+%sixteen-col-grid {
+  grid-template-columns: [fullcontent-start]minmax(3rem, 1fr)
+  [centercontent-start]repeat(16, [column-start] minmax(min-content, 7.5rem) [column-end])
+  [centercontent-end]
+  minmax(3rem, 1fr)[fullcontent-end];
+  display: grid;
+}
+
+%navigation-grid {
+  grid-template-columns: repeat(4, 14rem);
+  display: grid;
+}
+
+%logo-area-grid {
+  grid-template-columns: max-content;
+}
+
+%card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  display: grid;
+}
+
+%radio-grid {
+  grid-template-columns: repeat(2, 1.4rem max-content);
+}
+
+%radio-grid-single {
+  grid-template-columns: 1.4rem max-content;
+}

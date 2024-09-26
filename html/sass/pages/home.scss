@@ -1,0 +1,200 @@
+.whats-important {
+  @extend %default-grid;
+
+  &__content-left {
+    grid-column: fullcontent-start / column-end 4;
+    background-color: $color-off-white;
+    padding: 7rem;
+
+    @media only screen and (max-width: $bp-tab-land) {
+      padding: 3rem 4rem;
+    }
+
+    @media only screen and (max-width: $bp-phone-port-large) {
+      grid-column: fullcontent;
+    }
+  }
+
+  &__img-right {
+    grid-column: column-start 5 / fullcontent-end;
+    background-image: url("../img/1.jpg");
+    background-size: cover;
+    background-position: center;
+
+    @media only screen and (max-width: $bp-phone-port-large) {
+      grid-column: fullcontent;
+      background-position: center;
+      height: 30vh;
+    }
+  }
+
+  &__img-left {
+    grid-column: fullcontent-start / column-end 4;
+    background-image: url("../img/2.jpg");
+    background-size: cover;
+    background-position: center;
+
+    @media only screen and (max-width: $bp-phone-port-large) {
+      grid-column: fullcontent;
+    }
+  }
+
+  &__content-right {
+    grid-column: column-start 5 / fullcontent-end;
+    background-color: $color-primary-dark-blue;
+    color: $color-white;
+    padding: 7rem;
+
+    @media only screen and (max-width: $bp-tab-land) {
+      padding: 3rem 4rem;
+    }
+
+    @media only screen and (max-width: $bp-phone-port-large) {
+      grid-column: fullcontent;
+    }
+  }
+}
+
+.quote {
+  background-color: $color-primary-sky-blue;
+  &__text {
+    padding: 0 15rem 7rem 15rem;
+
+    @media only screen and (max-width: $bp-tab-land) {
+      padding: 0 3rem 4rem;
+    }
+  }
+
+  .sig {
+    display: block;
+    margin-left: 25%;
+    margin-top: 2rem;
+    padding-bottom: 0;
+  }
+
+  .heading-2 {
+    font-size: calc(5.2rem + 1.2vw);
+    color: $color-white;
+    padding: 5rem 7rem 0 7rem;
+
+    @media only screen and (max-width: $bp-tab-land) {
+      font-size: calc(3rem + 1.7vw);
+      padding: 3rem 0 0 0;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  }
+}
+
+.plan {
+  @extend %sixteen-col-grid;
+  background-image: linear-gradient(rgba($color-off-white, .85), rgba($color-off-white, .85)), url(../img/4.jpg);
+  background-size: cover;
+  background-position: center;
+
+  .heading-2 {
+    grid-column: fullcontent;
+    padding-top: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .section-text{
+    grid-column: fullcontent;
+    text-align: center;
+  }
+
+  .card-container {
+    grid-column: 3 / 17;
+    @include card-grid;
+
+    margin-top: 3rem;
+  }
+}
+
+.get-involved {
+  @extend %default-grid;
+
+  .volunteer {
+    grid-column: fullcontent-start / column-end 4;
+    background-color: $color-secondary-light-grey;
+    padding: 4rem 4rem 2vw 5vw;
+
+    @media only screen and (max-width: $bp-tab-port) {
+      grid-column: fullcontent;
+    }
+  }
+
+  .register {
+    grid-column: column-start 5 / fullcontent-end;
+    background-color: $color-primary-ocean-blue;
+    padding: 4rem 4rem 6vw 5vw;
+    color:$color-white;
+
+    @media only screen and (max-width: $bp-tab-port) {
+      grid-column: fullcontent;
+    }
+
+    .voter-link {
+      font-weight: 600;
+      color: $color-white;
+      &:visited {
+        color: $color-white;
+      }
+    }
+  }
+
+  .contribute {
+    grid-column: fullcontent;
+    display: block;
+    background-color: $color-primary-dark-blue;
+    padding: 3rem 0;
+    text-align: center;
+
+    .contribute_link{
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-white;
+      font-size: calc(1.6rem + .7vw);
+    }
+  }
+}
+
+.news {
+ //   @include sixteen-col-grid-1fr;
+   // grid-row-gap: 1rem;
+    background-color: #eaeaea;
+   // padding-bottom: 2rem;
+  position: relative;
+
+    .heading-2 {
+      padding: 4rem 7rem 0rem 7rem;
+      color: $color-white;
+      position: absolute;
+      z-index: 999;
+    }
+
+    .card-container{
+      grid-column: 1 / -1;
+   //   grid-row-start: 2;
+      @include card-grid;
+    }
+}
+
+//.news {
+//  @include sixteen-col-grid-1fr;
+//  grid-row-gap: 1rem;
+//  background-color: #eaeaea;
+//  padding-bottom: 2rem;
+//
+//  .heading-2 {
+//    padding: 4rem 7rem 0rem 7rem;
+//    //color: $color-white;
+//  }
+//
+//  .card-container{
+//    grid-column: 2 / 18;
+//    grid-row-start: 2;
+//    @extend %card-grid;
+//  }
+//}

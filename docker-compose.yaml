@@ -1,0 +1,25 @@
+services:
+  #php    
+  app:
+    image: php:8.2-fpm-alpine3.20
+    restart: always
+    container_name: php-alpine-city-council-web-env
+    working_dir: /var/www/html
+    tty: true
+    volumes:
+      - ./html:/var/www/html
+
+  # nginx
+  web:
+    image: nginx:alpine
+    container_name: nginx-alpine-city-council-web-server
+    restart: always
+    tty: true
+    ports:
+      - "80:80"
+      - "443:443"
+    links:
+      - app
+    volumes:
+      - ./nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
+      - ./html:/var/www/html

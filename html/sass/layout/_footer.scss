@@ -1,0 +1,50 @@
+.footer {
+  grid-column: fullwidth;
+  background-color: $color-super-dark-grey;
+  color: $color-white;
+
+  .heading-2 {
+    padding: 4rem 7rem 0 7rem;
+  }
+
+  .heading-3 {
+    padding: 4rem 0 4rem 7rem;
+    font-size: calc(2.4rem + 1.3vw);
+  }
+
+  .email-contacts {
+    white-space: pre-line;
+    font-size: calc(2.1rem + .9vw);
+    letter-spacing: .1rem;
+    text-align: center;
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+  }
+
+  .social-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    &__item {
+      margin-left: 1.5rem;
+    }
+  }
+
+  &__content {
+    text-align: center;
+    padding: 4rem;
+  }
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
+  width: 4rem;
+  height: 4em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: #ffffff;
+}

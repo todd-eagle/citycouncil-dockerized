@@ -1,0 +1,101 @@
+.card-container {
+
+  .action-card{
+    background-color: $color-super-dark-grey;
+    color: $color-white;
+    transition: transform .3s;
+
+    .heading-4{
+      text-align: center;
+      padding: 1rem 0 2rem 0;
+    }
+
+    &:hover {
+      transform: translateY(-.6rem) scale(1.03);
+    }
+  }
+
+  .news-card {
+    display: grid;
+    grid-template-columns: 4rem 1fr 3.5rem;
+    grid-template-rows: .2fr .6fr.2fr;
+
+    &__image {
+      grid-column: 1 / -1;
+      filter: brightness(70%);
+      object-fit: cover;
+      width: 100%;
+      overflow: hidden;
+      z-index: 40;
+
+    }
+
+    &__text {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      align-self: center;
+      z-index: 50;
+    }
+
+  }
+
+
+  action-card {
+    background-color: #262626;
+    color: #ffffff;
+    transition: transform 0.3s;
+
+    .heading-4 {
+      text-align: center;
+      padding: 1rem 0 2rem 0;
+    }
+
+  }
+
+  //.action-card{
+   //  box-shadow: 0 1rem 2rem rgba(#646464, .5);
+   //  background-color: $color-super-dark-grey;
+   //  color: $color-white;
+   //  padding: 3rem 4rem 4rem 4rem;
+   //  border-radius: .5rem;
+   //
+   //  transition: transform .3s;
+   //
+   //  .heading-4{
+   //    text-align: center;
+   //    padding: 1rem 0 2rem 0;
+   //  }
+   //
+   //  &:hover {
+   //    transform: translateY(-.6rem) scale(1.03);
+   //  }
+   //}
+   //
+   // .news-card {
+   //   display: grid;
+   //   grid-template-columns: 2.5rem 1fr 2.5rem;
+   //   grid-template-rows: .2fr .6fr.2fr;
+   //   //box-shadow: 0 1rem 2rem rgba(#646464, .9);
+   //
+   //   &__image {
+   //     grid-column: 1 / -1;
+   //     filter: brightness(60%);
+   //     object-fit: cover;
+   //     width: 100%;
+   //     overflow: hidden;
+   //     border-radius: .5rem;
+   //     box-shadow: 0 1rem 2rem rgba(#646464, .4);
+   //     z-index: 40;
+   //
+   //   }
+   //
+   //   &__text {
+   //     grid-column: 2 / 3;
+   //     grid-row: 2 / 3;
+   //     align-self: center;
+   //     z-index: 50;
+   //   }
+   //
+   // }
+   //
+ }

@@ -1,0 +1,139 @@
+%heading {
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  line-height: 1;
+  font-weight: 100;
+}
+
+.heading-1 {
+  @extend %heading;
+  font-family: $font-primary;
+}
+.heading-2 {
+  @extend %heading;
+  font-family: $font-secondary;
+  font-size: calc(3rem + 1.7vw);
+}
+
+.heading-3 {
+  @extend %heading;
+  font-family: $font-secondary;
+  font-size: calc(2.5rem + 1.2vw);
+}
+
+.heading-4 {
+  @extend %heading;
+  font-family: $font-secondary;
+  font-size: calc(1.2rem + .6vw);
+}
+
+.section-text {
+  margin-top: 2rem;
+  word-spacing: .2rem;
+  font-size: calc(1rem + .8vw);
+}
+
+.logo-area {
+  &__text {
+    font-size: calc(2.2rem + .6vw);
+    text-transform: uppercase;
+
+    &--small {
+      text-transform: none;
+      font-size: calc(1.8rem + .48vw);
+    }
+  }
+}
+
+.logo-mobile {
+  &__text {
+    font-size: calc(2.2rem + .6vw);
+    text-transform: uppercase;
+
+    &--small {
+      text-transform: none;
+      font-size: calc(1.3rem + .48vw);
+    }
+  }
+}
+
+.quote {
+  &__text {
+    font-size: calc(2rem + .6vw);
+    color: $color-white;
+    font-weight: 400;
+    font-style: italic;
+
+    @media only screen and (max-width: $bp-tab-land) {
+      font-size: calc(1.5rem + .8vw);
+
+    }
+  }
+}
+
+.action-card{
+
+  &__text {
+    font-size: calc(1rem + .3vw);
+  }
+}
+
+.footer {
+  font-family: $font-secondary;
+
+  &__content {
+    font-family: $font-primary;
+  }
+}
+
+.news-card {
+
+  &__text {
+    color: $color-white;
+   // font-size: 1.8rem;
+    font-size: 2.6rem;
+    line-height: 1.5;
+    font-weight: 600;
+
+    @media only screen and (max-width: $bp-phone-port-large) {
+      font-size: 2.6rem;
+    }
+  }
+}
+
+%menu-font {
+  font-size: calc(1.1rem + .3vw);
+  font-weight: 300;
+}
+
+.mail-status {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.header {
+  &__townhall{
+    .heading-1{
+      font-size: 2rem;
+    }
+  }
+}
+
+.linkto {
+
+    &--dark {
+      color: $color-primary-ocean-blue;
+      &:visited {
+        color: $color-primary-ocean-blue;
+      }
+    }
+
+  &--light {
+    color: $color-white;
+    &:visited {
+      color: $color-white;
+    }
+
+  }
+}

@@ -1,0 +1,68 @@
+.townhalls{
+  @include default-grid;
+
+  .virtual-townhall {
+    grid-column: fullcontent-start / column-end 4;
+    padding: 4rem 4rem 6rem 5vw;
+    background-color: $color-primary-sky-blue;
+
+    @media only screen and (max-width: $bp-tab-port) {
+      grid-column: fullcontent;
+    }
+
+    .heading-2{
+      color: $color-white;
+    }
+  }
+
+  .schedule {
+    grid-column: column-start 5 / fullcontent-end;
+    padding: 4rem 4rem 6rem 5vw;
+    background-color: $color-off-white;
+
+    @media only screen and (max-width: $bp-tab-port) {
+      grid-column: fullcontent;
+    }
+
+    .schedule-links{
+      margin-top: 2rem;
+      display: grid;
+      row-gap: 1rem;
+      list-style: none;
+
+      &__link-item {
+
+
+        color: inherit;
+        font-size: calc(1rem + .8vw);
+
+        &:hover {
+          text-decoration: underline;
+         // cursor: pointer;
+        }
+      }
+
+      &__link:link,
+      &__link:visited,
+      &__link:active
+      {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $color-super-dark-grey;
+      }
+
+      &__icon-group {
+        margin-right: 2rem;
+        display: inline-block;
+        width: calc(2.4rem + .8vw);
+        height: calc(2.4rem + .8vw);;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: $color-primary-dark-blue;
+      }
+
+    }
+  }
+}
+

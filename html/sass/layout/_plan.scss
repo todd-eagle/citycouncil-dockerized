@@ -1,0 +1,76 @@
+.title {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  background-color: $color-off-white;
+}
+
+.plans {
+  @include default-grid;
+
+  .plan-1 {
+    grid-column: fullcontent-start / column-end 4;
+    padding: 4rem 4rem 6rem 5vw;
+    background-color: $color-secondary-dark-blue;
+    color: $color-white;
+
+    @media only screen and (max-width: $bp-tab-port) {
+      grid-column: fullcontent;
+    }
+  }
+
+  .plan-2 {
+    grid-column: column-start 5 / fullcontent-end;
+    padding: 4rem 4rem 6rem 5vw;
+    background-color: $color-secondary-light-grey;
+
+    @media only screen and (max-width: $bp-tab-port) {
+      grid-column: fullcontent;
+    }
+  }
+
+  .plan-3 {
+    grid-column: fullcontent-start / column-end 4;
+    padding: 4rem 4rem 6rem 5vw;
+    background-color: $color-off-white;
+
+    @media only screen and (max-width: $bp-tab-port) {
+      grid-column: fullcontent;
+    }
+  }
+
+  .plan-4 {
+    grid-column: column-start 5 / fullcontent-end;
+    padding: 4rem 4rem 6rem 5vw;
+    background-color: $color-primary-dark-blue;
+    color: $color-white;
+
+    @media only screen and (max-width: $bp-tab-port) {
+      grid-column: fullcontent;
+    }
+  }
+
+  .plan-5 {
+
+  }
+
+  .plan-6 {
+
+  }
+}
+
+.declaration {
+  background-color: #024c89;
+  color: $color-white;
+  text-align: center;
+  padding: 4rem 5vw 6rem 5vw;
+
+  .section-text {
+    text-align: unset;
+  }
+
+}
+
+.block {
+  display: block;
+}
