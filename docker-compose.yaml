@@ -16,5 +16,5 @@ services:
     restart: unless-stopped
     tty: true
     ports:
-      - "3003:80"
-      - "3003:443"
+      - "80:3003"
+      - "443:3003"
