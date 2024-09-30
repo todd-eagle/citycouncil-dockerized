@@ -8,10 +8,8 @@ services:
     restart: unless-stopped
     tty: true
     ports:
-      # - "8080:3003"
-      - "4430:443"
-      # networks:
-      #   - php
+    expose:
+      - 443:443
       #php    
   app:
     build:
@@ -20,9 +18,6 @@ services:
     container_name: php-alpine-city-council-web-env
     restart: unless-stopped
     tty: true
-    # networks:
-    #   - php
 
-    # networks:
-    #   php:
-    #     driver: bridge
+  ports:
+    - '3003:443'
