@@ -9,8 +9,8 @@ services:
     tty: true
     ports:
       - "3003:3003"
-  networks:
-    - php
+  # networks:
+  #   - php
   #php    
   app:
     build:
