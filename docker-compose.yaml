@@ -7,12 +7,12 @@ services:
     container_name: nginx-alpine-city-council-web-server
     restart: unless-stopped
     tty: true
-    ports:
-      - "80:3003"
-      # - "443:3003"
-      # networks:
-      #   - php
-      #php    
+    # ports:
+    #   - "80:3003"
+    # - "443:3003"
+    # networks:
+    #   - php
+    #php    
   app:
     build:
       context: .
