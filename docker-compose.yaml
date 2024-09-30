@@ -6,10 +6,10 @@ services:
       dockerfile: Web.Dockerfile
     container_name: nginx-alpine-city-council-web-server
     restart: unless-stopped
-    ports:
-      - 3003:443
     expose:
       - 443
+    ports:
+      - 433:3003
       #php    
   app:
     build:
