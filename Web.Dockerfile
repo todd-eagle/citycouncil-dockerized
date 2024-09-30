@@ -1,7 +1,5 @@
 FROM nginx:alpine
 
-EXPOSE 80
-
 WORKDIR /var/www/html
 
 COPY html/ /var/www/html/
