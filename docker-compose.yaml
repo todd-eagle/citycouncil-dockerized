@@ -1,12 +1,4 @@
 services:
-  #php    
-  app:
-    build:
-      context: .
-      dockerfile: Php.Dockerfile
-    container_name: php-alpine-city-council-web-env
-    restart: unless-stopped
-    tty: true
   # nginx
   web:
     build:
@@ -16,4 +8,22 @@ services:
     restart: unless-stopped
     tty: true
     ports:
-      - "3003:443"
+      - "80:80"
+      - "443:443"
+      - "3003:3003"
+    # networks:
+    #   - php
+    #php    
+  app:
+    build:
+      context: .
+      dockerfile: Php.Dockerfile
+    container_name: php-alpine-city-council-web-env
+    restart: unless-stopped
+    tty: true
+    # networks:
+    #   - php
+
+    # networks:
+    #   php:
+    #     driver: bridge
