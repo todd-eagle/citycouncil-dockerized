@@ -8,8 +8,8 @@ services:
     restart: unless-stopped
     tty: true
     ports:
-      - "8080:3003"
-      # - "4430:443"
+      # - "8080:3003"
+      - "4430:443"
       # networks:
       #   - php
       #php    
