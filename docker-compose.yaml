@@ -7,6 +7,8 @@ services:
     container_name: nginx-alpine-city-council-web-server
     restart: unless-stopped
     tty: true
+    ports:
+      - 3003:443
     expose:
       - 443
       #php    
@@ -17,6 +19,3 @@ services:
     container_name: php-alpine-city-council-web-env
     restart: unless-stopped
     tty: true
-
-ports:
-  - '3003:443'
