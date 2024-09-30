@@ -8,10 +8,11 @@ services:
     restart: unless-stopped
     tty: true
     ports:
-      - "3003:3003"
-  # networks:
-  #   - php
-  #php    
+      - "80:3003"
+      # - "443:3003"
+      # networks:
+      #   - php
+      #php    
   app:
     build:
       context: .
