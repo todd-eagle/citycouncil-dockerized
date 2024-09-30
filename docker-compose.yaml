@@ -20,4 +20,4 @@ services:
     tty: true
 
   ports:
-    - '3003:443'
+    - 3003:443
