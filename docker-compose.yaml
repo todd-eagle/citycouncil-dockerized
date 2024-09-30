@@ -2,8 +2,8 @@ services:
   # nginx
   web:
     build:
-    context: .
-    dockerfile: Web.Dockerfile
+      context: .
+      dockerfile: Web.Dockerfile
     container_name: nginx-alpine-city-council-web-server
     restart: unless-stopped
     ports:
@@ -13,7 +13,7 @@ services:
       #php    
   app:
     build:
-    context: .
-    dockerfile: Php.Dockerfile
+      context: .
+      dockerfile: Php.Dockerfile
     container_name: php-alpine-city-council-web-env
     restart: unless-stopped
