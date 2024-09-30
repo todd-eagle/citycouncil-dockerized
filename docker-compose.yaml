@@ -1,17 +1,17 @@
 services:
   # nginx
-  web:
-    build:
-      context: .
-      dockerfile: Web.Dockerfile
-    container_name: nginx-alpine-city-council-web-server
-    restart: unless-stopped
-    tty: true
-    ports:
-      - "443:3003"
-    # networks:
-    #   - php
-    #php    
+  # web:
+  #   build:
+  #     context: .
+  #     dockerfile: Web.Dockerfile
+  #   container_name: nginx-alpine-city-council-web-server
+  #   restart: unless-stopped
+  #   tty: true
+  #   ports:
+  #     - "443:3003"
+  # networks:
+  #   - php
+  #php    
   app:
     build:
       context: .
