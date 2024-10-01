@@ -8,8 +8,10 @@ services:
     restart: unless-stopped
     expose:
       - 443
+    ports:
       - 433:3003
-      #php    
+
+  #php    
   app:
     build:
       context: .
