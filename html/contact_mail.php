@@ -1,9 +1,8 @@
 <?php
-$env = parse_ini_file('.env');
 
 if (isset($_POST["name"]) && isset($_POST["email"])) {
-    $toEmail = $env["TO_EMAIL"];
-    $mailHeaders =  $env["EMAIL_HEADERS"];
+    $toEmail = "paigecommunityrides@gmail.com";
+    $mailHeaders = "From: Sheena for Newberry<mail-service@paigefornewberry.com>";
     $subject = "I want to help!";
     $msg = "
     Hi Sheena's Campaign! \n
