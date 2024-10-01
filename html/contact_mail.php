@@ -12,6 +12,6 @@ if (isset($_POST["name"]) && isset($_POST["email"])) {
     if (mail($toEmail, $subject, $msg, $mailHeaders)) {
         print "<p class='success'>Message sent!</p>";
     } else {
-        print "<p class='Error'>There was problem sending the message.</p>";
+        print "<p class='Error'>The campaign has ended.  Messaging has been disabled.</p>";
     }
 }
