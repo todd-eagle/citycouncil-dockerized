@@ -1003,10 +1003,9 @@ body {
 }
 
 .about {
-  grid-column: column-start 5/fullcontent-end;
+  grid-column: column-start 5 / fullcontent-end;
   padding: 4rem 4rem 6rem 5vw;
-  background-size: cover;
-  background-image: url("../img/9.jpg");
+  background-image: url(../img/9.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
