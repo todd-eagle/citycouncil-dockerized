@@ -10,7 +10,7 @@ if (isset($_POST["name"]) && isset($_POST["email"])) {
     Thank you!";
 
     if (mail($toEmail, $subject, $msg, $mailHeaders)) {
-        print "<p class='success'>Message sent!</p>";
+        print "<p class='Error'>The campaign has ended.  Messaging has been disabled.</p>";
     } else {
         print "<p class='Error'>The campaign has ended.  Messaging has been disabled.</p>";
     }

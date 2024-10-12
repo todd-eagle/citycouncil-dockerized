@@ -1002,9 +1002,14 @@ body {
   }
 }
 
-.about .bio-pic {
+.about {
   grid-column: column-start 5/fullcontent-end;
   padding: 4rem 4rem 6rem 5vw;
+}
+
+.bio-pic {
+  padding: 0;
+  background-size: cover;
   background-image: url("../img/9.jpg");
   background-position: center;
   background-repeat: no-repeat;
