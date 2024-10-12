@@ -1002,11 +1002,6 @@ body {
   }
 }
 
-.about {
-  grid-column: column-start 5/fullcontent-end;
-  padding: 4rem 4rem 6rem 5vw;
-}
-
 .about .bio-pic {
   grid-column: column-start 5/fullcontent-end;
   padding: 4rem 4rem 6rem 5vw;
@@ -1014,6 +1009,14 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media only screen and (max-width: 56.3em) {
+  .about .bio-pic {
+    grid-column: fullcontent;
+    display: none;
+  }
+}
+
 
 @media only screen and (max-width: 56.3em) {
   .about .bio-pic {
