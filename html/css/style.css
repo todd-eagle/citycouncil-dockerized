@@ -1003,9 +1003,14 @@ body {
 }
 
 .about {
-  grid-column: fullcontent-start/column-end 4;
+  grid-column: column-start 5/fullcontent-end;
   padding: 4rem 4rem 6rem 5vw;
-  background-image: url(../img/9.jpg);
+}
+
+.about .bio-pic {
+  grid-column: column-start 5/fullcontent-end;
+  padding: 4rem 4rem 6rem 5vw;
+  background-image: url("../img/9.jpg");
   background-position: center;
   background-repeat: no-repeat;
 }
