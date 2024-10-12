@@ -1011,11 +1011,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.bio-pic {
-  padding: 0;
-
-}
-
 @media only screen and (max-width: 56.3em) {
   .about .bio-pic {
     grid-column: fullcontent;
