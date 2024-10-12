@@ -1003,7 +1003,7 @@ body {
 }
 
 .about {
-  grid-column: column-start 5 / fullcontent-end;
+  grid-column: fullcontent-start/column-end 4;
   padding: 4rem 4rem 6rem 5vw;
   background-image: url(../img/9.jpg);
   background-position: center;
